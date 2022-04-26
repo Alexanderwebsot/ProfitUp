@@ -12,7 +12,46 @@
 	<!-- main css -->
 	<link rel="stylesheet" href="css/main.css">
 </head>
-<body class="body-cookies">
+<body class="body-cookie">
+<div class="menu-modal mob-true" id="menu-modal">
+	<div class="menu-modal-top">
+		<a href="tel:+7 (987) 654-32-10" class="menu-modal__number">
+			+7 (987) 654-32-10
+		</a>
+		<a href="#" class="menu-modal__calback">
+			Перезвоните мне
+		</a>
+	</div>
+	<ul class="menu-modal__list">
+		<li>
+			<a href="">Мобильная версия</a>
+		</li>
+		<li>
+			<a href="">Возможности сервиса</a>
+		</li>
+		<li>
+			<a href="">Для кого сервис</a>
+		</li>
+		<li>
+			<a href="">Тарифы и цены</a>
+		</li>
+		<li>
+			<a href="">Преимущества</a>
+		</li>
+		<li>
+			<a href="">Отзывы</a>
+		</li>
+	</ul>
+	<div class="menu-modal-btns">
+		<a href="#" class="nav-btn btn-registration">
+			<span>Регистрация</span>
+		</a>
+		<a href="#" class="nav-btn btn-entry">
+			<span>Вход</span>
+		</a>
+		
+	</div>
+</div>
 <div class="cookies flex">
 	<div class="cookies-close center">
 		<img src="img/cross.svg" alt="">
@@ -32,13 +71,20 @@
 				Profit<span>Up</span>
 			</a>
 			<div class="nav-content flex-a">
-				<div class="nav-phone flex-a">
-					<a href="tel:+7 (987) 654-32-10" class="nav-phone__number">
+				<a href="tel:89876543210" class="nav-phone flex-a">
+					<span class="nav-phone__number">
 						+7 (987) 654-32-10
-					</a>
-					<span class="nav-phone__icon center">
-						<img src="img/phone-icon.svg" alt="">
 					</span>
+					<span class="nav-phone__icon center">
+						
+						<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M3.2277 0.014281C2.812 0.107914 1.95755 0.902633 1.07393 2.01748C0.656729 2.54387 0.338828 3.01301 0.151179 3.37934C-0.0357054 3.74415 -0.0369907 3.7618 0.07999 4.37412C0.589883 7.04338 2.71795 10.1568 5.58118 12.4224C7.32529 13.8025 9.24715 14.731 10.8581 14.9719C11.3346 15.0431 11.4381 15.0076 12.165 14.5234C13.4556 13.6637 14.8156 12.3352 14.9622 11.7908C15.0236 11.5627 14.9148 11.2336 14.6989 10.9947C14.3375 10.5946 12.3259 9.33254 11.4617 8.96371C10.6654 8.62381 10.4246 8.70365 9.69993 9.54799C9.48539 9.798 9.28697 10.0214 9.259 10.0445C9.21814 10.0783 9.13618 10.0572 8.83975 9.93635C7.56151 9.41544 6.47943 8.529 5.69368 7.35916C5.43505 6.97413 5.05204 6.19491 4.94128 5.82844C4.92227 5.76562 4.98794 5.69471 5.36493 5.37097C5.89686 4.91424 6.05157 4.74882 6.14701 4.5347C6.23689 4.33319 6.23567 4.11556 6.14315 3.82917C5.94178 3.2058 5.29468 2.06765 4.42051 0.799237C4.09583 0.328152 3.98326 0.215236 3.72241 0.0990547C3.50947 0.00420548 3.37484 -0.0188642 3.2277 0.014281Z" fill="#37415E"/>
+						</svg>
+
+					</span>
+				</a>
+				<div class="nav-burger mob-true">
+					<img src="img/burger.svg" alt="">
 				</div>
 				<div class="nav-btns flex-a">
 					<a href="#" class="nav-btn btn-entry">
@@ -71,8 +117,11 @@
 					Пользуйтесь 14 дней бесплатно
 				</span>
 			</div>
-			<div class="header-img">
+			<div class="header-img pc-true">
 				<img src="img/header-bg.png" alt="">
+			</div>
+			<div class="header-img mob-true">
+				<img src="img/header-bg-mobile.png" alt="">
 			</div>
 		</div>
 		<div class="header-markets flex">
@@ -134,7 +183,7 @@
 				</div>
 				<div class="convenience-item-text">
 					<h3 class="convenience-item__name">
-						Все показатели в одном окне
+						Все показатели<br class="mob-true"> в одном окне
 					</h3>
 					<p class="convenience-item__subtext">
 						Смотрите показатели со всех
@@ -159,179 +208,300 @@
 				</div>
 			</div>
 		</div>
-		<img src="img/convenience-img.png" alt="" class="convenience-img">
+		<img src="img/convenience-img.png" alt="" class="convenience-img pc-true">
 	</div>
+	<img src="img/convenience-img-mobile.png" alt="" class="convenience-img mob-true">
 </section>
 <section class="opportunities">
 	<div class="container">
 		<h2 class="opportunities__title">
 			<strong>Возможности</strong> сервиса
 		</h2>
-		<div class="opportunities-row flex">
-			<div class="opportunities-nav">
-				<div class="opportunities-list">
-					<div class="opportunities-list__item opportunities-active">
-						Сводка
-					</div>
-					<div class="opportunities-list__item">
-						Редактирование карточек
-					</div>
-					<div class="opportunities-list__item">
-						Упущенная  выручка
-					</div>
-					<div class="opportunities-list__item">
-						Оптимизация карточек
-					</div>
-					<div class="opportunities-list__item ">
-						Маржинальность и ABC-анализ
-					</div>
-					<div class="opportunities-list__item">
-						Реклама
-					</div>
-					<div class="opportunities-list__item">
-						Расчет поставки
-					</div>
-					<div class="opportunities-list__item">
-						История изменений
-					</div>
-					<div class="opportunities-list__item">
-						Просмотр отзывов
-					</div>
-					<div class="opportunities-list__item">
-						Печать
-					</div>
-					<div class="opportunities-list__item">
-						Права доступа
-					</div>
-				</div>
-				<a href="#" class="header-btn btn">
-					<span>Попробовать бесплатно</span>
-				</a>
-				<span class="header-btn__text">
-					Пользуйтесь 14 дней бесплатно
-				</span>
-			</div>
-			<div class="opportunities-slider">
-				<div class="opportunities-slide">
-					<div class="opportunities-slide-inner">
-						<h3 class="opportunities-slide__title">
+		<div class="opportunities-wrapper">
+			<div class="opportunities-row flex">
+				<div class="opportunities-nav">
+					<div class="opportunities-list">
+						<div class="opportunities-list__item opportunities-active">
 							Сводка
-						</h3>
-						<p class="opportunities-slide__subtext">
-							Показываем нелеквидные и самые маржинальные товары
-						</p>
-						<img src="img/opportunities-img.png" alt="" class="opportunities-img">
-					</div>
-				</div>
-				<div class="opportunities-slide">
-					<div class="opportunities-slide-inner">
-						<h3 class="opportunities-slide__title">
+						</div>
+						<div class="opportunities-list__item">
 							Редактирование карточек
-						</h3>
-						<p class="opportunities-slide__subtext">
-							Показываем нелеквидные и самые маржинальные товары
-						</p>
-						<img src="img/opportunities-img.png" alt="" class="opportunities-img">
-					</div>
-				</div>
-				<div class="opportunities-slide">
-					<div class="opportunities-slide-inner">
-						<h3 class="opportunities-slide__title">
+						</div>
+						<div class="opportunities-list__item">
 							Упущенная  выручка
-						</h3>
-						<p class="opportunities-slide__subtext">
-							Показываем нелеквидные и самые маржинальные товары
-						</p>
-						<img src="img/opportunities-img.png" alt="" class="opportunities-img">
-					</div>
-				</div>
-				<div class="opportunities-slide">
-					<div class="opportunities-slide-inner">
-						<h3 class="opportunities-slide__title">
+						</div>
+						<div class="opportunities-list__item">
 							Оптимизация карточек
-						</h3>
-						<p class="opportunities-slide__subtext">
-							Показываем нелеквидные и самые маржинальные товары
-						</p>
-						<img src="img/opportunities-img.png" alt="" class="opportunities-img">
-					</div>
-				</div>
-				<div class="opportunities-slide">
-					<div class="opportunities-slide-inner">
-						<h3 class="opportunities-slide__title">
+						</div>
+						<div class="opportunities-list__item ">
 							Маржинальность и ABC-анализ
-						</h3>
-						<p class="opportunities-slide__subtext">
-							Показываем нелеквидные и самые маржинальные товары
-						</p>
-						<img src="img/opportunities-img.png" alt="" class="opportunities-img">
-					</div>
-				</div>
-				<div class="opportunities-slide">
-					<div class="opportunities-slide-inner">
-						<h3 class="opportunities-slide__title">
+						</div>
+						<div class="opportunities-list__item">
 							Реклама
-						</h3>
-						<p class="opportunities-slide__subtext">
-							Показываем нелеквидные и самые маржинальные товары
-						</p>
-						<img src="img/opportunities-img.png" alt="" class="opportunities-img">
-					</div>
-				</div>
-				<div class="opportunities-slide">
-					<div class="opportunities-slide-inner">
-						<h3 class="opportunities-slide__title">
+						</div>
+						<div class="opportunities-list__item">
 							Расчет поставки
-						</h3>
-						<p class="opportunities-slide__subtext">
-							Показываем нелеквидные и самые маржинальные товары
-						</p>
-						<img src="img/opportunities-img.png" alt="" class="opportunities-img">
-					</div>
-				</div>
-				<div class="opportunities-slide">
-					<div class="opportunities-slide-inner">
-						<h3 class="opportunities-slide__title">
+						</div>
+						<div class="opportunities-list__item">
 							История изменений
-						</h3>
-						<p class="opportunities-slide__subtext">
-							Показываем нелеквидные и самые маржинальные товары
-						</p>
-						<img src="img/opportunities-img.png" alt="" class="opportunities-img">
-					</div>
-				</div>
-				<div class="opportunities-slide">
-					<div class="opportunities-slide-inner">
-						<h3 class="opportunities-slide__title">
+						</div>
+						<div class="opportunities-list__item">
 							Просмотр отзывов
-						</h3>
-						<p class="opportunities-slide__subtext">
-							Показываем нелеквидные и самые маржинальные товары
-						</p>
-						<img src="img/opportunities-img.png" alt="" class="opportunities-img">
-					</div>
-				</div>
-				<div class="opportunities-slide">
-					<div class="opportunities-slide-inner">
-						<h3 class="opportunities-slide__title">
+						</div>
+						<div class="opportunities-list__item">
 							Печать
-						</h3>
-						<p class="opportunities-slide__subtext">
-							Показываем нелеквидные и самые маржинальные товары
-						</p>
-						<img src="img/opportunities-img.png" alt="" class="opportunities-img">
+						</div>
+						<div class="opportunities-list__item">
+							Права доступа
+						</div>
+					</div>
+					<a href="#" class="header-btn btn">
+						<span>Попробовать бесплатно</span>
+					</a>
+					<span class="header-btn__text">
+						Пользуйтесь 14 дней бесплатно
+					</span>
+				</div>
+				<div class="opportunities-slider">
+					<div class="opportunities-slide">
+						<div class="opportunities-slide-inner">
+							<h3 class="opportunities-slide__title">
+								Сводка
+							</h3>
+							<p class="opportunities-slide__subtext">
+								Все основные показатели <br class="mob-true">
+								и метрики со всех маркетплейсов <br class="mob-true">
+								в едином окне
+							</p>
+							<img src="img/opportunities-img-mobile.png" alt="" class="opportunities-img mob-true">
+							<div class="opportunities-slide-mobile mob-true">
+								<a href="#" class="header-btn btn">
+									<span>Попробовать бесплатно</span>
+								</a>
+								<span class="header-btn__text">
+									Пользуйтесь 14 дней бесплатно
+								</span>
+							</div>
+							<img src="img/opportunities-img.png" alt="" class="opportunities-img pc-true">
+						</div>
+					</div>
+					<div class="opportunities-slide">
+						<div class="opportunities-slide-inner">
+							<h3 class="opportunities-slide__title">
+								Редактирование карточек
+							</h3>
+							<p class="opportunities-slide__subtext">
+								Редактирование  карточки на всех маркетплейсах из одного окна
+							</p>
+							<img src="img/opportunities-img-mobile.png" alt="" class="opportunities-img mob-true">
+							<div class="opportunities-slide-mobile mob-true">
+								<a href="#" class="header-btn btn">
+									<span>Попробовать бесплатно</span>
+								</a>
+								<span class="header-btn__text">
+									Пользуйтесь 14 дней бесплатно
+								</span>
+							</div>
+							<img src="img/opportunities-img.png" alt="" class="opportunities-img pc-true">
+						</div>
+					</div>
+					<div class="opportunities-slide">
+						<div class="opportunities-slide-inner">
+							<h3 class="opportunities-slide__title">
+								Упущенная  выручка
+							</h3>
+							<p class="opportunities-slide__subtext">
+								Редактирование  карточки на всех маркетплейсах из одного окна
+							</p>
+							<img src="img/opportunities-img-mobile.png" alt="" class="opportunities-img mob-true">
+							<div class="opportunities-slide-mobile mob-true">
+								<a href="#" class="header-btn btn">
+									<span>Попробовать бесплатно</span>
+								</a>
+								<span class="header-btn__text">
+									Пользуйтесь 14 дней бесплатно
+								</span>
+							</div>
+							<img src="img/opportunities-img.png" alt="" class="opportunities-img pc-true">
+						</div>
+					</div>
+					<div class="opportunities-slide">
+						<div class="opportunities-slide-inner">
+							<h3 class="opportunities-slide__title">
+								Оптимизация карточек
+							</h3>
+							<p class="opportunities-slide__subtext">
+								Подсказываем как улучшить качество ваших карточек: Рекомендации по графическому
+								и текстовому контенту, подсказки
+								по seo оптимизации. Повышайте позиции карточек с помощью наших рекомендаций
+							</p>
+							<img src="img/opportunities-img-mobile.png" alt="" class="opportunities-img mob-true">
+							<div class="opportunities-slide-mobile mob-true">
+								<a href="#" class="header-btn btn">
+									<span>Попробовать бесплатно</span>
+								</a>
+								<span class="header-btn__text">
+									Пользуйтесь 14 дней бесплатно
+								</span>
+							</div>
+							<img src="img/opportunities-img.png" alt="" class="opportunities-img pc-true">
+						</div>
+					</div>
+					<div class="opportunities-slide">
+						<div class="opportunities-slide-inner">
+							<h3 class="opportunities-slide__title">
+								Маржинальность и ABC-анализ
+							</h3>
+							<p class="opportunities-slide__subtext">
+								Показываем нелеквидные и самые маржинальные товары
+							</p>
+							<img src="img/opportunities-img-mobile.png" alt="" class="opportunities-img mob-true">
+							<div class="opportunities-slide-mobile mob-true">
+								<a href="#" class="header-btn btn">
+									<span>Попробовать бесплатно</span>
+								</a>
+								<span class="header-btn__text">
+									Пользуйтесь 14 дней бесплатно
+								</span>
+							</div>
+							<img src="img/opportunities-img.png" alt="" class="opportunities-img pc-true">
+						</div>
+					</div>
+					<div class="opportunities-slide">
+						<div class="opportunities-slide-inner">
+							<h3 class="opportunities-slide__title">
+								Реклама
+							</h3>
+							<p class="opportunities-slide__subtext">
+								Автоматический мониторинг
+								и подбор наилучшей ставки
+								и поискового запроса 
+							</p>
+							<img src="img/opportunities-img-mobile.png" alt="" class="opportunities-img mob-true">
+							<div class="opportunities-slide-mobile mob-true">
+								<a href="#" class="header-btn btn">
+									<span>Попробовать бесплатно</span>
+								</a>
+								<span class="header-btn__text">
+									Пользуйтесь 14 дней бесплатно
+								</span>
+							</div>
+							<img src="img/opportunities-img.png" alt="" class="opportunities-img pc-true">
+						</div>
+					</div>
+					<div class="opportunities-slide">
+						<div class="opportunities-slide-inner">
+							<h3 class="opportunities-slide__title">
+								Расчет поставки
+							</h3>
+							<p class="opportunities-slide__subtext">
+								Фиксируйте изменения, чтобы понимать как они отразились
+								на продажах
+							</p>
+							<img src="img/opportunities-img-mobile.png" alt="" class="opportunities-img mob-true">
+							<div class="opportunities-slide-mobile mob-true">
+								<a href="#" class="header-btn btn">
+									<span>Попробовать бесплатно</span>
+								</a>
+								<span class="header-btn__text">
+									Пользуйтесь 14 дней бесплатно
+								</span>
+							</div>
+							<img src="img/opportunities-img.png" alt="" class="opportunities-img pc-true">
+						</div>
+					</div>
+					<div class="opportunities-slide">
+						<div class="opportunities-slide-inner">
+							<h3 class="opportunities-slide__title">
+								История изменений
+							</h3>
+							<p class="opportunities-slide__subtext">
+								Показываем нелеквидные и самые маржинальные товары
+							</p>
+							<img src="img/opportunities-img-mobile.png" alt="" class="opportunities-img mob-true">
+							<div class="opportunities-slide-mobile mob-true">
+								<a href="#" class="header-btn btn">
+									<span>Попробовать бесплатно</span>
+								</a>
+								<span class="header-btn__text">
+									Пользуйтесь 14 дней бесплатно
+								</span>
+							</div>
+							<img src="img/opportunities-img.png" alt="" class="opportunities-img pc-true">
+						</div>
+					</div>
+					<div class="opportunities-slide">
+						<div class="opportunities-slide-inner">
+							<h3 class="opportunities-slide__title">
+								Просмотр отзывов
+							</h3>
+							<p class="opportunities-slide__subtext">
+								Показываем нелеквидные и самые маржинальные товары
+							</p>
+							<img src="img/opportunities-img-mobile.png" alt="" class="opportunities-img mob-true">
+							<div class="opportunities-slide-mobile mob-true">
+								<a href="#" class="header-btn btn">
+									<span>Попробовать бесплатно</span>
+								</a>
+								<span class="header-btn__text">
+									Пользуйтесь 14 дней бесплатно
+								</span>
+							</div>
+							<img src="img/opportunities-img.png" alt="" class="opportunities-img pc-true">
+						</div>
+					</div>
+					<div class="opportunities-slide">
+						<div class="opportunities-slide-inner">
+							<h3 class="opportunities-slide__title">
+								Печать
+							</h3>
+							<p class="opportunities-slide__subtext">
+								Показываем нелеквидные и самые маржинальные товары
+							</p>
+							<img src="img/opportunities-img-mobile.png" alt="" class="opportunities-img mob-true">
+							<div class="opportunities-slide-mobile mob-true">
+								<a href="#" class="header-btn btn">
+									<span>Попробовать бесплатно</span>
+								</a>
+								<span class="header-btn__text">
+									Пользуйтесь 14 дней бесплатно
+								</span>
+							</div>
+							<img src="img/opportunities-img.png" alt="" class="opportunities-img pc-true">
+						</div>
+					</div>
+					<div class="opportunities-slide">
+						<div class="opportunities-slide-inner">
+							<h3 class="opportunities-slide__title">
+								Права доступа
+							</h3>
+							<p class="opportunities-slide__subtext">
+								Показываем нелеквидные и самые маржинальные товары
+							</p>
+							<img src="img/opportunities-img-mobile.png" alt="" class="opportunities-img mob-true">
+							<div class="opportunities-slide-mobile mob-true">
+								<a href="#" class="header-btn btn">
+									<span>Попробовать бесплатно</span>
+								</a>
+								<span class="header-btn__text">
+									Пользуйтесь 14 дней бесплатно
+								</span>
+							</div>
+							<img src="img/opportunities-img.png" alt="" class="opportunities-img pc-true">
+						</div>
 					</div>
 				</div>
-				<div class="opportunities-slide">
-					<div class="opportunities-slide-inner">
-						<h3 class="opportunities-slide__title">
-							Права доступа
-						</h3>
-						<p class="opportunities-slide__subtext">
-							Показываем нелеквидные и самые маржинальные товары
-						</p>
-						<img src="img/opportunities-img.png" alt="" class="opportunities-img">
-					</div>
+			</div>
+			<div class="opportunities-arrows mob-true">
+				<div class="opportunities-arrow opportunities-arrow__prev">
+					<svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M0.483961 13.2834C0.593196 13.5342 0.883416 13.6715 1.17628 13.6107C1.28812 13.5875 1.8879 13.0096 4.38676 10.5173C6.16953 8.7392 7.48399 7.39655 7.51751 7.31939C7.5912 7.14994 7.59087 7.00255 7.5166 6.86137C7.44775 6.73052 1.42335 0.703481 1.28415 0.626235C1.05498 0.49898 0.679783 0.602966 0.527068 0.836026C0.421552 0.997048 0.404773 1.23808 0.487847 1.39874C0.527276 1.47495 1.81727 2.78875 3.3545 4.31825L6.14945 7.09918L3.35198 9.87958C1.81338 11.4088 0.525456 12.7195 0.489871 12.7922C0.411633 12.9523 0.409691 13.1128 0.483961 13.2834Z" fill="white"/>
+					</svg>
+				</div>
+				<div class="opportunities-arrow opportunities-arrow__next">
+					<svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M0.483961 13.2834C0.593196 13.5342 0.883416 13.6715 1.17628 13.6107C1.28812 13.5875 1.8879 13.0096 4.38676 10.5173C6.16953 8.7392 7.48399 7.39655 7.51751 7.31939C7.5912 7.14994 7.59087 7.00255 7.5166 6.86137C7.44775 6.73052 1.42335 0.703481 1.28415 0.626235C1.05498 0.49898 0.679783 0.602966 0.527068 0.836026C0.421552 0.997048 0.404773 1.23808 0.487847 1.39874C0.527276 1.47495 1.81727 2.78875 3.3545 4.31825L6.14945 7.09918L3.35198 9.87958C1.81338 11.4088 0.525456 12.7195 0.489871 12.7922C0.411633 12.9523 0.409691 13.1128 0.483961 13.2834Z" fill="white"/>
+					</svg>
 				</div>
 			</div>
 		</div>
@@ -373,11 +543,11 @@
 					<img src="img/utility-3.svg" alt="">
 				</div>
 				<h3 class="utility-block__name">
-					Менеджеру <br>
+					Менеджеру <br class="mob-true"><br>
 					по закупкам
 				</h3>
 				<p class="utility-block__text">
-					Планируйте закупки исходя из текущих потребностей, сокращая срок оборачиваемости товаров.
+					Планируйте закупки исходя<br class="mob-true"> из текущих потребностей,<br class="mob-true"> сокращая срок оборачи<span class="mob-true">-</span>ваемости товаров.
 				</p>
 			</div>
 			<div class="utility-block">
@@ -389,9 +559,16 @@
 					заказов
 				</h3>
 				<p class="utility-block__text">
-					Ускоряйте комплектовку за счет работы с единой базой заказов,<br> печатайте все необхо-димые документы.
+					Ускоряйте комплектовку<br class="mob-true"> за счет работы с единой<br class="mob-true"> базой заказов,<br> печатайте<br class="mob-true"> все необхо-димые<br class="mob-true"> документы.
 				</p>
 			</div>
+		</div>
+		<div class="utility-swipe mob-true flex-a">
+			<img src="img/swipe-icon.svg" alt="" class="utility-swipe__img">
+			<p class="utility-swipe__text">
+				Листайте влево, чтобы увидеть
+				полный список
+			</p>
 		</div>
 	</div>
 </section>
@@ -1288,7 +1465,7 @@
 			<p class="advantage-block__subtext">
 				Пользователи голосуют за нужные доработки, и наша 
 				команда разработчиков <strong>добавляет 
-				необходимые инструменты
+				необходимые инструменты <br class="mob-true">
 				в кратчайшие сроки</strong>
 			</p>
 		</div>
@@ -1350,7 +1527,10 @@
 							</p>
 						</div>
 						<p class="reviews-slide__text">
-							«ProfitUp» – то, без чего сегодня не имеет смысла запускать интернет-проекты. Ее отсутствие останавливает рост. Для нас ProfitUp и другие <br>
+							«ProfitUp» – то, без чего сегодня<br class="mob-true"> не имеет смысла запускать <br class="mob-true">интернет-проекты. Ее отсутствие останавливает рост.<br class="mob-true">
+							<br class="mob-true">
+
+							Для нас ProfitUp и другие <br class="pc-true">
 							ее инструменты помогли увидеть сезонность бизнеса, облегчить процесс работы с рекламой <br>
 							в целом и, самое главное, увеличить эффективность рекламы и брибыль.
 						</p>
@@ -1465,12 +1645,15 @@
 		<h2 class="increase__title">
 			<strong>Увеличьте продажи <br>
 			на маркетплейсах <br>
-			в 2-3 раза</strong> с помощью сервиса ProfitUp
+			в 2-3 раза</strong> <br class="mob-true"> с помощью сервиса ProfitUp
 		</h2>
 		<a href="#" class="increase-btn btn">
 			<span>Попробовать бесплатно</span>
 		</a>
-		<img src="img/increase-img.png" alt="" class="increase__img">
+		<img src="img/increase-img.png" alt="" class="increase__img pc-true">
+	</div>
+	<div class="increase-img-wrapper">
+		<img src="img/increase-img-mobile.png" alt="" class="increase__img mob-true">
 	</div>
 </section>
 <footer class="footer">
