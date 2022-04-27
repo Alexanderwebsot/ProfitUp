@@ -8,6 +8,17 @@ $(document).ready(function () {
 
   $(".phone").mask("+7 (999) 999-9999");
 
+  if ($(window).width() <= '475'){
+    $('.reviews-slider, .tariff-slider, .opportunities-slider').on('init', function(event, slick){
+      AOS.init();
+    });
+  }
+  else{
+    $('.reviews-slider, .tariff-slider, .opportunities-slider, .utility-row').on('init', function(event, slick){
+      AOS.init();
+    });
+  }
+
   $('.reviews-slider').slick({
       infinite: false,
       slidesToShow: 1,
@@ -37,9 +48,7 @@ $(document).ready(function () {
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: false,
-      speed: 700,
       fade: true,
-      cssEase: 'linear',
       swipe: false,
       breakpoint: 969,
       responsive: [
@@ -48,7 +57,8 @@ $(document).ready(function () {
             settings: {
               swipe: true,
               arrows: true,
-              adaptiveHeight: true,
+              speed: 700,
+              cssEase: 'linear',
               prevArrow: $('.opportunities-arrow__prev'),
               nextArrow: $('.opportunities-arrow__next'),
             }
@@ -82,13 +92,14 @@ $(document).ready(function () {
   $('.opportunities-list__item').on('click', function() {
   	let element = $(this);
   	let element_index = $('.opportunities-list__item').index(element)
+    $('.opportunities-slider').slick('slickGoTo', element_index);
   	$('.opportunities-list__item').removeClass('opportunities-active');
   	$(this).addClass('opportunities-active');
-  	$('.opportunities-slider').slick('slickGoTo', element_index);
+  	
   })
 
   $('.tariff-price__btn').on('click', function() {
-  	let block = $(this).closest('.tariff-block');
+  	let block = $(this).closest('.tariff-slide');
   	$(block).addClass('hidden-visible');
   	return false;
   })
