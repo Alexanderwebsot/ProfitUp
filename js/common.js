@@ -8,7 +8,7 @@ $(document).ready(function () {
 
   $(".phone").mask("+7 (999) 999-9999");
 
-  if ($(window).width() <= '475'){
+  if ($(window).width() <= '1024'){
     $('.reviews-slider, .tariff-slider, .opportunities-slider').on('init', function(event, slick){
       AOS.init();
     });
