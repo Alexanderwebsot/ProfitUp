@@ -41,6 +41,7 @@ $(document).ready(function () {
       fade: true,
       cssEase: 'linear',
       swipe: false,
+      
    });
 
   $('.opportunities-slider').slick({
@@ -59,6 +60,7 @@ $(document).ready(function () {
               arrows: true,
               speed: 700,
               cssEase: 'linear',
+              adaptiveHeight: true,
               prevArrow: $('.opportunities-arrow__prev'),
               nextArrow: $('.opportunities-arrow__next'),
             }
